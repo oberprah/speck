@@ -15,6 +15,7 @@ Create a design document that lets the developer review and approve the approach
 | Making and documenting decisions | Documenting architecture without rationale |
 | Why this approach over alternatives | How the pieces connect at code level |
 | Risks and unknowns | Implementation order or file-by-file changes |
+| Type definitions and interfaces | Method bodies or implementation logic |
 
 **After approval:** Proceed to [Phase 3: Implement](03-implement.md).
 
@@ -97,6 +98,8 @@ Structure this section to best match the problem. The goal is clear communicatio
 - What data models or interfaces are involved? (types/schemas are fine — they clarify the design)
 
 **Stay at the right level:** Data models and interfaces are design. Implementation details (which files to change, what order to code things, method bodies) belong in Phase 3.
+
+**Code smell: Extensive code blocks.** If your design document contains more than a few type definitions or interfaces, you're doing implementation work. A design document heavy on code suggests you've skipped past "what and why" into "how" — step back and focus on decisions and rationale instead.
 
 ### Open Questions
 
