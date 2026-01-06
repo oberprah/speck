@@ -48,11 +48,13 @@ Include **validation steps** at strategic points—not after every step, but at 
 For each step in the plan:
 
 **Delegate to subagent** with:
-- The full design document (`02-design.md`) — always, for complete context
 - The step to accomplish (high-level, not detailed)
-- Relevant `CLAUDE.md` files for affected components
+- Path to relevant files (as `02-design.md`)
+- Where to record progress: the step section in `03-implementation.md`
 
-Subagents are equally capable—they figure out implementation details, decide what files to change, make commits as needed, and ensure tests pass before reporting back with what was done, key decisions made, and any issues encountered.
+Subagents are equally capable—they read the linked files, figure out implementation details, decide what files to change, make commits as needed, and ensure tests pass.
+
+**Subagents document their work:** Progress, decisions, and discoveries are written directly to `03-implementation.md`. This persists the knowledge and keeps the coordinator's context lean.
 
 **Evaluate the report** and decide next action:
 - **Success** → Proceed to next step
@@ -133,7 +135,6 @@ Notes: ...
 
 - **Coordinator, not implementer** — Main agent orchestrates; subagents execute
 - **High-level steps** — Logical units, not detailed instructions; trust subagent intelligence
-- **Always pass design doc** — Subagents need full context to make good decisions
 - **Multiple commits per step** — Each step can include several commits; tests pass after each step
 - **Clean main context** — Subagents handle details so coordinator stays focused on big picture
 - **Sequential execution** — One step at a time; later steps may change based on earlier results

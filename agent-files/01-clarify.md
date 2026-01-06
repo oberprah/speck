@@ -54,7 +54,7 @@ Example topics to clarify:
 - Understand existing code/features being extended
 - Investigate technical constraints
 - Explore patterns, APIs, data models
-- Document findings in `research/<topic>.md`
+- Subagents document their findings in `research/<topic>.md`
 
 ### 3. Document Requirements
 
