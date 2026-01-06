@@ -20,7 +20,8 @@ Why delegate?
 
 - Read `02_design_<feature-name>.md` — understand the structural decisions
 - Review `01_requirements_<feature-name>.md` — note acceptance criteria
-- **Explore the codebase** — Use subagents to find specific files, understand existing patterns, and identify integration points. The design doc tells you *what*; exploration tells you *where* and *how things currently work*.
+- Review research files from `research/` folder if they exist — prior exploration may answer your questions
+- **Explore the codebase as needed** — Use subagents to find specific files, understand current patterns not covered in prior research, or verify information is still current. The design doc tells you *what*; exploration tells you *where* and *how things currently work*.
 - Identify component boundaries, interfaces, and key files
 
 ### 2. Create Implementation Plan
