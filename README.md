@@ -31,10 +31,10 @@ Each phase produces artifacts in `docs/specs/<yymmdd-feature-name>/` (plus the c
 
 ```
 docs/specs/241219-user-export/
-├── 01-requirements.md      # Phase 1 output
-├── 02-design.md            # Phase 2 output
-├── 03-implementation.md    # Phase 3 progress and findings
-└── research/               # Research from any phase
+├── 01_requirements_user-export.md   # Phase 1 output
+├── 02_design_user-export.md         # Phase 2 output
+├── 03_implementation_user-export.md # Phase 3 progress and findings
+└── research/                        # Research from any phase
     └── ...
 ```
 

@@ -22,9 +22,9 @@ All substantive content lives in the `agent-files/` directory. The README.md exp
 
 ### Three-Phase Development
 
-1. **Clarify Phase** - AI asks focused questions to turn rough ideas into clear requirements. Output: `01-requirements.md`
-2. **Design Phase** - AI autonomously researches codebase and creates design document for approval. Output: `02-design.md`
-3. **Implement Phase** - Main agent coordinates subagents to execute implementation. Output: Code + `03-implementation.md`
+1. **Clarify Phase** - AI asks focused questions to turn rough ideas into clear requirements. Output: `01_requirements_<feature-name>.md`
+2. **Design Phase** - AI autonomously researches codebase and creates design document for approval. Output: `02_design_<feature-name>.md`
+3. **Implement Phase** - Main agent coordinates subagents to execute implementation. Output: Code + `03_implementation_<feature-name>.md`
 
 ### Key Principles
 
@@ -40,10 +40,10 @@ When users implement this workflow in their projects, each feature creates:
 
 ```
 docs/specs/<yymmdd-feature-name>/
-├── 01-requirements.md      # Phase 1 output
-├── 02-design.md            # Phase 2 output
-├── 03-implementation.md    # Phase 3 progress
-└── research/               # Research from any phase
+├── 01_requirements_<feature-name>.md   # Phase 1 output
+├── 02_design_<feature-name>.md         # Phase 2 output
+├── 03_implementation_<feature-name>.md # Phase 3 progress
+└── research/                           # Research from any phase
 ```
 
 ## Working with These Files

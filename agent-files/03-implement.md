@@ -22,14 +22,14 @@ The coordinator works through these stages:
 
 ### 1. Prepare
 
-- Read `02-design.md` and understand the implementation approach
-- Review `01-requirements.md` for verification criteria
+- Read `02_design_<feature-name>.md` and understand the implementation approach
+- Review `01_requirements_<feature-name>.md` for verification criteria
 - Read relevant `CLAUDE.md` files for affected components
 - Note the components to modify and testing strategy
 
 ### 2. Create Implementation Plan
 
-Write `03-implementation.md` with a checklist of high-level steps. Each step should be a **logical unit** that a smart, autonomous subagent can execute independently.
+Write `03_implementation_<feature-name>.md` with a checklist of high-level steps. Each step should be a **logical unit** that a smart, autonomous subagent can execute independently.
 
 **Step characteristics:**
 - **Logical scope**: Represents a coherent piece of work
@@ -49,17 +49,17 @@ For each step in the plan:
 
 **Delegate to subagent** with:
 - The step to accomplish (high-level, not detailed)
-- Path to relevant files (as `02-design.md`)
-- Where to record progress: the step section in `03-implementation.md`
+- Path to relevant files (as `02_design_<feature-name>.md`)
+- Where to record progress: the step section in `03_implementation_<feature-name>.md`
 
 Subagents are equally capable—they read the linked files, figure out implementation details, decide what files to change, make commits as needed, and ensure tests pass.
 
-**Subagents document their work:** Progress, decisions, and discoveries are written directly to `03-implementation.md`. This persists the knowledge and keeps the coordinator's context lean.
+**Subagents document their work:** Progress, decisions, and discoveries are written directly to `03_implementation_<feature-name>.md`. This persists the knowledge and keeps the coordinator's context lean.
 
 **Evaluate the report** and decide next action:
 - **Success** → Proceed to next step
-- **Minor deviation** → Note in `03-implementation.md`, proceed if result is acceptable
-- **Plan adjustment** → Update `03-implementation.md` with new approach and rationale, continue
+- **Minor deviation** → Note in `03_implementation_<feature-name>.md`, proceed if result is acceptable
+- **Plan adjustment** → Update `03_implementation_<feature-name>.md` with new approach and rationale, continue
 - **Blocking issue** → Stop immediately, document blocker, report to developer (may need to return to design phase)
 
 ### 4. Final Verification
@@ -67,15 +67,15 @@ Subagents are equally capable—they read the linked files, figure out implement
 Before declaring complete:
 - Run all checks: `./dev backend check`, `./dev frontend check`
 - Run all tests: `./dev backend test`, `./dev frontend e2e`
-- Review `01-requirements.md` — verify each requirement is addressed
+- Review `01_requirements_<feature-name>.md` — verify each requirement is addressed
 - Run validation step: start application, verify key flows work
-- Document verification results in `03-implementation.md`
+- Document verification results in `03_implementation_<feature-name>.md`
 
 ### 5. Prepare for Human Testing
 
 Do NOT create a PR. Instead:
 - Ensure all changes are committed
-- Update `03-implementation.md` with:
+- Update `03_implementation_<feature-name>.md` with:
   - Summary of what was implemented
   - Any deviations from the design
   - Known issues or limitations
@@ -86,7 +86,7 @@ The developer will test, then create the PR when satisfied.
 
 ## The Implementation Document
 
-Create `03-implementation.md` in the feature folder. The number of steps depends on feature size: small features may have 1-2 steps, larger features may have 5+. Each step is a logical unit.
+Create `03_implementation_<feature-name>.md` in the feature folder. The number of steps depends on feature size: small features may have 1-2 steps, larger features may have 5+. Each step is a logical unit.
 
 ### Structure
 
@@ -126,9 +126,9 @@ Notes: ...
 
 - All implementation steps completed
 - All tests pass
-- Requirements verified against `01-requirements.md`
+- Requirements verified against `01_requirements_<feature-name>.md`
 - Final validation passed
-- `03-implementation.md` documents any deviations
+- `03_implementation_<feature-name>.md` documents any deviations
 - Branch is ready for human testing (no PR yet)
 
 ## Principles

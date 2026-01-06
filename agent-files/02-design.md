@@ -36,7 +36,7 @@ Subagents document their findings in `research/<topic>.md`.
 
 ### 1. Understand Requirements
 
-Read `01-requirements.md` and any research documents from Phase 1. Be clear on what problem we're solving and what success looks like.
+Read `01_requirements_<feature-name>.md` and any research documents from Phase 1. Be clear on what problem we're solving and what success looks like.
 
 ### 2. Research the Codebase
 
@@ -55,7 +55,7 @@ The main agent then synthesizes: compare approaches, make decisions, document ra
 
 ### 4. Write the Design Document
 
-Create `02-design.md` in the feature folder using the template below.
+Create `02_design_<feature-name>.md` in the feature folder using the template below.
 
 ## Design Document Template
 
