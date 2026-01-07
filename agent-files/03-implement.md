@@ -107,7 +107,7 @@ Then decide:
 **Commits:** abc123, def456
 **Verification:** Passed — unit tests added, integration test green
 **Notes:** Implemented X in `src/services/`. Decision: used adapter pattern for Y because...
-**Review:** Structure matches design.
+**Coordinator Review:** Structure matches design. → Step 2
 
 ### Step 2: <description>
 **Goal:** ...
